@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | NJACK Winter of Code</title>
+    
+    <meta name="description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
+		<meta NAME="Keywords" CONTENT="Njack,winter,code,nwoc,iit,iitp,patna,indian institute of technology">
+		<!-- Schema.org markup for Google+ -->
+		<meta itemprop="name" content="NJACK Winter of Code">
+		<meta itemprop="description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
+		<meta itemprop="image" content="https://njackwinterofcode.github.io/nwocLogo.jpg">
+
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@njackiitp">
+		<meta name="twitter:title" content="NJACK Winter of Code">
+		<meta name="twitter:description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
+		<meta name="twitter:creator" content="@njackiitp">
+		<!-- Twitter summary card with large image must be at least 280x150px -->
+		<meta name="twitter:image:src" content="https://njackwinterofcode.github.io/nwocLogo.jpg">
+	
+		<!-- Open Graph data -->
+		<meta property="og:title" content="NJACK Winter of Code" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://njackwinterofcode.github.io/" />
+		<meta property="og:image" content="https://njackwinterofcode.github.io/nwocLogo.jpg" />
+		<meta property="og:description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
+		<meta property="og:site_name" content="NWoC" />
+		<meta property="article:published_time" content="2018-10-11T05:59:00+01:00" />
+		<meta property="article:modified_time" content="2018-10-12T19:08:47+01:00" />
+		<meta property="article:section" content="NJACK Winter of Code is an initiative by Open Source Department of NJACK, IIT Patna for the students, who have never participated in Free or Open Source Software (FOSS) development before, to get them involved during the winter vacations and break the ice of Open Source contributions." />
+    <meta property="article:tag" content="NWoC" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="canonical" href="https://njackwinterofcode.github.io/leaderboard.html"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto">
+    <link rel="stylesheet" href="/materialjs/material.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="/materialjs/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.nwoc-drawer-item').click(function() {
+          $( '.mdl-layout__drawer, .mdl-layout__obfuscator' ).removeClass( 'is-visible' );
+        });
+      });
+    </script>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: #4d5974;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+.container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+h3 {
+  font-size: 1.75rem;
+  color: #373d51;
+  padding: 1.3rem;
+  margin: 0;
+}
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #ff5353;
+}
+.accordion a:hover::after {
+  border: 1px solid #ff5353;
+}
+.accordion a.active {
+  color: #ff5353;
+  border-bottom: 1px solid #ff5353;
+}
+.accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #ff5353;
+  border: 1px solid #ff5353;
+}
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
+</style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
+      <header class="mdl-layout__header mdl-layout__header--scroll nwoc-header">
+        <div class="mdl-layout__header-row">
+          <a href="/" style="text-decoration:none;">
+            <span class="mdl-layout-title nwoc-menu-title">
+              <span class="nwoc-menu-njack">NJACK</span> Winter of Code
+            </span>
+          </a>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link nwoc-menu-item" href="/#register">Register</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/projects.html">Projects</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/leaderboard.html">Leaderboard</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/archive.html">Archive</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/codeofconduct.html">Conduct</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/contact.html">Contact</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/timeline.html">Timeline</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/faq.html">FAQs</a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="mdl-layout__drawer nwoc-drawer">
+        <div class="nwoc-close-button-div">
+          <button class="mdl-button mdl-js-button nwoc-close-button nwoc-drawer-item">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/#register">Register</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/projects.html">Projects</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/leaderboard.html">Leaderboard</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/archive.html">Archive</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/codeofconduct.html">Conduct</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/contact.html">Contact</a>
+          <a class="mdl-navigation__link nwoc-menu-item" href="/timeline.html">Timeline</a>
+          <a class="mdl-navigation__link nwoc-menu-item" href="/faq.html">Faqs</a>
+        </nav>
+      </div>
+
+      <main class="mdl-layout__content">
+        <div class="nwoc-content" style="min-height:calc(100vh - 235px);">
+          <h3 style="text-align: center;">FAQs:</h3>
+          <div id="leader-div" style='overflow-x:auto'>
+            <p>FREQUENTLY ASKED QUESTIONS</p>
+          </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <a>What can JavaScript Do?</a>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>How JavaScript Can Modify HTML and CSS Values?</a>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>What Is SVG?</a>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>Is FAQ Section Matters In Website?</a>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>How To Create a Light FAQ Element?</a>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              </div>
+            </div>
+          </div>
+         
+<script>
+    // Code By Webdevtrick ( https://webdevtrick.com )
+const items = document.querySelectorAll(".accordion a");
+
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+    
+        </div>
+        <footer>
+            <svg viewBox="0 0 120 28">
+             <defs> 
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="
+                       1 0 0 0 0  
+                       0 1 0 0 0  
+                       0 0 1 0 0  
+                       0 0 0 13 -9" result="goo" />
+                  <xfeBlend in="SourceGraphic" in2="goo" />
+                </filter>
+                 <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+              </defs> 
+            
+               <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+               <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+             
+             
+              <g class="gooeff" filter="url(#goo)">
+              <circle class="drop drop1" cx="20" cy="2" r="8.8"  />
+              <circle class="drop drop2" cx="25" cy="2.5" r="7.5"  />
+              <circle class="drop drop3" cx="16" cy="2.8" r="9.2"  />
+              <circle class="drop drop4" cx="18" cy="2" r="8.8"  />
+              <circle class="drop drop5" cx="22" cy="2.5" r="7.5"  />
+              <circle class="drop drop6" cx="26" cy="2.8" r="9.2"  />
+              <circle class="drop drop1" cx="5" cy="4.4" r="8.8"  />
+              <circle class="drop drop2" cx="5" cy="4.1" r="7.5"  />
+              <circle class="drop drop3" cx="8" cy="3.8" r="9.2"  />
+              <circle class="drop drop4" cx="3" cy="4.4" r="8.8"  />
+              <circle class="drop drop5" cx="7" cy="4.1" r="7.5"  />
+              <circle class="drop drop6" cx="10" cy="4.3" r="9.2"  />
+              
+              <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8"  />
+              <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5"  />
+              <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2"  />
+                <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8"  />
+              <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5"  />
+              <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"  />
+              <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+             </g>  
+                <!-- g mask="url(#xxx)">
+                <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+                </g>
+              </g -->
+            
+            </svg>
+            <div class = "footer-text2">
+              <div>
+              © NJACK, IIT Patna 2020
+              <ul class="footer-contact">
+                  <li><a href="mailto:njack@iitp.ac.in?subject=[NWoC]" target="_blank">njack@iitp.ac.in</a></li>
+                  <li><a href="mailto:njack.iitp@gmail.com?subject=[NWoC]" target="_blank">njack.iitp@gmail.com</a></li>
+                <li><a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/njackiitp" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/Njack-IITP/" target="_blank">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+              <!-- <div>done with fun - by &copy;<a href="www.chaba.de">Uwe Chardon</a></div> -->
+          </footer>
+        <!-- <footer class="mdl-mini-footer">
+          <div class="nwoc-footer">
+            <div class="mdl-mini-footer__left-section">
+              <div class="mdl-logo">© NJACK 2018</div>
+              <ul class="mdl-mini-footer__link-list">
+                <li><a href="mailto:njack.iitp@gmail.com?subject=[NWOC]" target="_blank">Email</a></li>
+                <li><a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/njackiitp" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/Njack-IITP/" target="_blank">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer> -->
+        
+      </main>
+    </div>
+  </body>
+</html>
